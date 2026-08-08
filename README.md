@@ -48,7 +48,7 @@ Once the patched driver is compiled, run `load-patched-ath9k.sh` line by line to
 Plug in the Wi-Fi adapter and confirm channels 12–13 are listed and `iw reg get` reports `country GB`:
 
 ```
-$ sudo iwlist wlan1 frequency
+$ iwlist wlan1 frequency
 wlan1     13 channels in total; available frequencies :
           Channel 01 : 2.412 GHz
           Channel 02 : 2.417 GHz
@@ -64,7 +64,7 @@ wlan1     13 channels in total; available frequencies :
           Channel 12 : 2.467 GHz
           Channel 13 : 2.472 GHz
 
-$ sudo iw reg get
+$ iw reg get
 ...
 phy#1
 country GB: DFS-ETSI
